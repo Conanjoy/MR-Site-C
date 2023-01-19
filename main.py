@@ -23,7 +23,7 @@ except ImportError:
     from pytz import timezone
 
 # Load ENV
-load_dotenv('config.env', override=True)
+load_dotenv('/etc/secrets/config.env', override=True)
 # LOGIN EXAMPLE:
 # "EMAIL:PASSWORD,EMAIL:PASSWORD"
 if not os.environ["LOGIN"]:
